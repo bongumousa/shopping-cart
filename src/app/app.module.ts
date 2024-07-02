@@ -3,6 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ProductComponent } from './product/product.component';
+import { CommonModule } from '@angular/common';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 
 // Import the functions you need from the SDKs you need
 // import { initializeApp } from "firebase/app";
@@ -29,11 +32,13 @@ import { AppComponent } from './app.component';
 
 @NgModule({ 
   declarations: [
-    AppComponent
+    AppComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule, 
+    CommonModule, RouterOutlet, RouterLink, RouterLinkActive
   ],
   providers: [],
   bootstrap: [AppComponent]
