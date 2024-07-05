@@ -6,6 +6,10 @@ import { AppComponent } from './app.component';
 import { ProductComponent } from './product/product.component';
 import { CommonModule } from '@angular/common';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatIconModule} from '@angular/material/icon';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatButtonModule} from '@angular/material/button';
 
 // Import the functions you need from the SDKs you need
 // import { initializeApp } from "firebase/app";
@@ -38,7 +42,8 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
   imports: [
     BrowserModule,
     AppRoutingModule, 
-    CommonModule, RouterOutlet, RouterLink, RouterLinkActive
+    CommonModule, RouterOutlet, RouterLink, RouterLinkActive, BrowserAnimationsModule,
+    MatButtonModule, MatDividerModule, MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
