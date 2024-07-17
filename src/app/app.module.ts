@@ -10,6 +10,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule} from '@angular/material/icon';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatButtonModule} from '@angular/material/button';
+import {ChangeDetectionStrategy, Component} from '@angular/core';
+import {MatCardModule} from '@angular/material/card';
 
 // Import the functions you need from the SDKs you need
 // import { initializeApp } from "firebase/app";
@@ -43,7 +45,8 @@ import {MatButtonModule} from '@angular/material/button';
     BrowserModule,
     AppRoutingModule, 
     CommonModule, RouterOutlet, RouterLink, RouterLinkActive, BrowserAnimationsModule,
-    MatButtonModule, MatDividerModule, MatIconModule
+    MatButtonModule, MatDividerModule, MatIconModule,
+    MatCardModule, MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
