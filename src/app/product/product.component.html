@@ -4,20 +4,20 @@
     <mat-card class="example-card" appearance="outlined">
       <mat-card-header>
         <div mat-card-avatar class="example-header-image"></div>
-        <mat-card-title>mustang</mat-card-title>
-        <mat-card-subtitle>American Muscle</mat-card-subtitle>
+        <mat-card-title>{{name}}</mat-card-title>
+        <mat-card-subtitle>{{model}}</mat-card-subtitle>
       </mat-card-header>
-      <img mat-card-image src="https://www.thedrive.com/wp-content/uploads/2023/12/03/mustang-dark-horse-1.jpg?w=1173&h=660" alt="Photo of a Shiba Inu">
+      <img mat-card-image src="{{imageF}}" alt="Photo of a Shiba Inu">
       <mat-card-content>
         <p>
-          Standard on all 2025 Mustang® EcoBoost® trims and available on all others, this smooth-shifting transmission comes with available steering wheel-mounted paddle shifters.
+          {{description}}
         </p>
-        <mat-card-title>$1200000</mat-card-title>
+        <mat-card-title>{{price}}</mat-card-title>
       </mat-card-content>
       <mat-card-actions>
         <section>
           <div class="example-button-row">
-            <a mat-raised-button href="https://www.thedrive.com/news/current-ford-mustang-production-is-ending-in-2028-report" target="_blank">Add To Cart</a>
+            <a mat-raised-button href="{{link}}" target="_blank">Add To Cart</a>
           </div>
         </section>
       </mat-card-actions>
