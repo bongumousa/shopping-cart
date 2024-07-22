@@ -1,143 +1,24 @@
 <section>
 
-  <div class="next">
+  <div class="next" *ngFor="let product of products">
     <mat-card class="example-card" appearance="outlined">
       <mat-card-header>
-        <div mat-card-avatar class="example-header-image"></div>
-        <mat-card-title>mustang</mat-card-title>
-        <mat-card-subtitle>American Muscle</mat-card-subtitle>
+        <div mat-card-avatar class="example-header-image">
+        </div>
+        <mat-card-title>{{product.title}}</mat-card-title>
+        <mat-card-subtitle>{{product.subtitle}}</mat-card-subtitle>
       </mat-card-header>
-      <img mat-card-image src="https://www.thedrive.com/wp-content/uploads/2023/12/03/mustang-dark-horse-1.jpg?w=1173&h=660" alt="Photo of a Shiba Inu">
+      <img mat-card-image src="{{product.imageF}}" alt="Photo of a Shiba Inu">
       <mat-card-content>
         <p>
-          Standard on all 2025 Mustang® EcoBoost® trims and available on all others, this smooth-shifting transmission comes with available steering wheel-mounted paddle shifters.
+          {{product.description}}
         </p>
-        <mat-card-title>$1200000</mat-card-title>
+        <mat-card-title>{{product.price}}</mat-card-title>
       </mat-card-content>
       <mat-card-actions>
         <section>
           <div class="example-button-row">
-            <a mat-raised-button href="https://www.thedrive.com/news/current-ford-mustang-production-is-ending-in-2028-report" target="_blank">Add To Cart</a>
-          </div>
-        </section>
-      </mat-card-actions>
-    </mat-card>    
-  </div>
-
-  <div class="next">
-    <mat-card class="example-card" appearance="outlined">
-      <mat-card-header>
-        <div mat-card-avatar class="header-image-1"></div>
-        <mat-card-title>Aventador</mat-card-title>
-        <mat-card-subtitle>SuperCar</mat-card-subtitle>
-      </mat-card-header>
-      <img mat-card-image src="https://cdn.motor1.com/images/mgl/OozxwY/s3/2024-lamborghini-aventador-successor-rendering.webp" alt="Photo of a Shiba Inu">
-      <mat-card-content>
-        <p>
-          Lamborghini currently produces the V10-powered Huracán, Urus SUV powered by a twin-turbo V8 engine, and will produce the Revuelto, a V12/electric hybrid, as of 2024. Lamborghini-Aventador-Successor.
-        </p>
-        <mat-card-title>$1100000</mat-card-title>
-      </mat-card-content>
-      <mat-card-actions>
-        <section>
-          <div class="example-button-row">
-            <a mat-raised-button href="https://www.motor1.com/features/654292/lamborghini-aventador-successor-horsepower-price-details/" target="_blank">Add To Cart</a>
-          </div>
-        </section>
-      </mat-card-actions>
-    </mat-card>    
-  </div>
-
-  <div class="next">
-    <mat-card class="example-card" appearance="outlined">
-      <mat-card-header>
-        <div mat-card-avatar class="header-image-2"></div>
-        <mat-card-title>Supra</mat-card-title>
-        <mat-card-subtitle>TunerCar</mat-card-subtitle>
-      </mat-card-header>
-      <img mat-card-image src="https://www.ronbrooks.co.uk/wp-content/uploads/2023/06/toyota-supra-mk4-1024x576.png" alt="Photo of a Shiba Inu">
-      <mat-card-content>
-        <p>
-          The Toyota Supra is a symbol of automotive evolution, the Supra has left an indelible mark on the automotive world. This article will trace the history and evolution of the Supra over its eventful lifespan.
-        </p>
-        <mat-card-title>$400000</mat-card-title>
-      </mat-card-content>
-      <mat-card-actions>
-        <section>
-          <div class="example-button-row">
-            <a mat-raised-button href="https://www.ronbrooks.co.uk/history-and-evolution-of-the-toyota-supra/" target="_blank">Add To Cart</a>
-          </div>
-        </section>
-      </mat-card-actions>
-    </mat-card>    
-  </div>
-
-  <div class="next">
-    <mat-card class="example-card" appearance="outlined">
-      <mat-card-header>
-        <div mat-card-avatar class="header-image-3"></div>
-        <mat-card-title>Nissan GTR35</mat-card-title>
-        <mat-card-subtitle>SuperCar</mat-card-subtitle>
-      </mat-card-header>
-      <img mat-card-image src="https://cdn.motor1.com/images/mgl/Av02V/s1/2022-nissan-gt-r-nismo-special-edition.webp" alt="Photo of a Shiba Inu">
-      <mat-card-content>
-        <p>
-          The Toyota Supra is a symbol of automotive evolution, the Supra has left an indelible mark on the automotive world. This article will trace the history and evolution of the Supra over its eventful lifespan.
-        </p>
-        <mat-card-title>$1900000</mat-card-title>
-      </mat-card-content>
-      <mat-card-actions>
-        <section>
-          <div class="example-button-row">
-            <a mat-raised-button href="https://salehahmk.shop/product_details/30030150.html" target="_blank">Add To Cart</a>
-          </div>
-        </section>
-      </mat-card-actions>
-    </mat-card>    
-  </div>
-
-  <div class="next">
-    <mat-card class="example-card" appearance="outlined">
-      <mat-card-header>
-        <div mat-card-avatar class="header-image-4"></div>
-        <mat-card-title>Lada</mat-card-title>
-        <mat-card-subtitle>Classic</mat-card-subtitle>
-      </mat-card-header>
-      <img mat-card-image src="https://cdn.motor1.com/images/mgl/A2r49/s3/wcf-lada-classic-lada-21071.webp" alt="Photo of a Shiba Inu">
-      <mat-card-content>
-        <p>
-          Introduced in 1980, the series was manufactured in Tolyatti and Izhevsk (Russia), Zaporizhia, Kherson, Cherkasy, and Kremenchuk (Ukraine), and in Egypt and Kazakhstan.
-        </p>
-        <mat-card-title>$200000</mat-card-title>
-      </mat-card-content>
-      <mat-card-actions>
-        <section>
-          <div class="example-button-row">
-            <a mat-raised-button href="https://www.ronbrooks.co.uk/history-and-evolution-of-the-toyota-supra/" target="_blank">Add To Cart</a>
-          </div>
-        </section>
-      </mat-card-actions>
-    </mat-card>    
-  </div>
-
-  <div class="next">
-    <mat-card class="example-card" appearance="outlined">
-      <mat-card-header>
-        <div mat-card-avatar class="header-image-5"></div>
-        <mat-card-title>Bugatti</mat-card-title>
-        <mat-card-subtitle>HyperCar</mat-card-subtitle>
-      </mat-card-header>
-      <img mat-card-image src="https://newsroom.cdn.bugatti-media.com/a32c5a46-eb09-4a6f-ac28-35622dde9d4d/xl" alt="Photo of a Shiba Inu">
-      <mat-card-content>
-        <p>
-          Ever since the Veyron was introduced in 2005, the W16 engine has been the beating heart of every Bugatti. For a car as evocative and important as this, great consideration went into the badge it should wear.
-        </p>
-        <mat-card-title>$9800000</mat-card-title>
-      </mat-card-content>
-      <mat-card-actions>
-        <section>
-          <div class="example-button-row">
-            <a mat-raised-button href="https://newsroom.bugatti.com/press-releases/bugatti-w16-mistral-the-ultimate-roadster" target="_blank">Add To Cart</a>
+            <a mat-raised-button href="{{product.link}}" target="_blank">Add To Cart</a>
           </div>
         </section>
       </mat-card-actions>

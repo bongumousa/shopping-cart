@@ -33,35 +33,9 @@ section {
   .example-card {
     max-width: 400px;
   }
-  
   .example-header-image {
-    background-image: url('https://cdn.motor1.com/images/mgl/npP3k/s3/2021-ford-mustang-mach-1.webp');
-    background-size: cover;
-  }
-  
-  .header-image-1 {
-    background-image: url('https://www.signaturecarhire.co.uk/blog/wp-content/uploads/2016/01/Lamborghini-Aventador-SV-Front.jpg');
-    background-size: cover;
-  }
-
-  .header-image-2 {
-    background-image: url('https://i.pinimg.com/564x/4f/65/9d/4f659d371b56aebbfeed33473930ee93.jpg');
-    background-size: cover;
-  }
-
-  .header-image-3 {
-    background-image: url('https://www.group1nissan.co.za/wp-content/uploads/nissan-gtr-image-02.jpg');
-    background-size: cover;
-  }
-
-  .header-image-4 {
-    background-image: url('https://s.car.info/image_files/1920/lada-niva-3-door-front-old-car-land-no2-2018-1-658293.jpg');
-    background-size: cover;
-  }
-
-  .header-image-5 {
-    background-image: url('https://hips.hearstapps.com/pop.h-cdn.co/assets/17/24/1600x920/gallery-1497377943-dsc-1196asdfa.jpg?resize=1024:*');
-    background-size: cover;
+      background-image: url('https://cdn.motor1.com/images/mgl/npP3k/s3/2021-ford-mustang-mach-1.webp');
+      background-size: cover;
   }
 
   .example-button-row {
