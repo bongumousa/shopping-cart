@@ -30,3 +30,20 @@ section {
     width: 120px;
   }
   
+  .example-card {
+    max-width: 400px;
+  }
+  .example-header-image {
+      background-image: url('https://cdn.motor1.com/images/mgl/npP3k/s3/2021-ford-mustang-mach-1.webp');
+      background-size: cover;
+  }
+
+  .example-button-row {
+    display: table-cell;
+    max-width: 600px;
+  }
+
+  .next {
+    display:inline-block;
+    width:33.3%;
+  }

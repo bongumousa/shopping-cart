@@ -1,15 +1,28 @@
-<section> 
+<section>
 
-    <div class="example-button-row">
-
-      <div class="example-flex-container">
-         
-        <div class="example-button-container">
-          <a mat-fab extended routerLink=".">
-            <mat-icon>favorite</mat-icon>
-            Link to deploy
-          </a>
+  <div class="next" *ngFor="let product of products">
+    <mat-card class="example-card" appearance="outlined">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image">
         </div>
-      </div>
-    </div>
-  </section>
+        <mat-card-title>{{product.title}}</mat-card-title>
+        <mat-card-subtitle>{{product.subtitle}}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="{{product.imageF}}" alt="Photo of a Shiba Inu">
+      <mat-card-content>
+        <p>
+          {{product.description}}
+        </p>
+        <mat-card-title>{{product.price}}</mat-card-title>
+      </mat-card-content>
+      <mat-card-actions>
+        <section>
+          <div class="example-button-row">
+            <a mat-raised-button href="{{product.link}}" target="_blank">Add To Cart</a>
+          </div>
+        </section>
+      </mat-card-actions>
+    </mat-card>    
+  </div>
+
+</section>
